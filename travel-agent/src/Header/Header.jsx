@@ -16,10 +16,10 @@ function Header() {
       </div>
       <nav>
         <ul>
-          <li onClick={() => handleNavigate('/')}>Home</li>
-          <li onClick={() => handleNavigate('/plans')}>Plans</li>
-          <li onClick={() => handleNavigate('/gallery')}>Gallery</li>
-          <li onClick={() => handleNavigate('/contact')}>Contact</li>
+        <li onClick={() => handleNavigate('/')} className={location.pathname === '/' ? 'active' : ''}>Home</li>
+        <li onClick={() => handleNavigate('/plans')} className={location.pathname === '/plans' ? 'active' : ''}>Plans</li>
+          <li onClick={() => handleNavigate('/gallery')} className={location.pathname === '/gallery' ? 'active' : ''}>Gallery</li>
+          <li onClick={() => handleNavigate('/contact')} className={location.pathname === '/contact' ? 'active' : ''}>Contact</li>
         </ul>
       </nav>
     </header>
