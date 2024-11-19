@@ -1,0 +1,106 @@
+/* Details.css */
+
+.details {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #040F0F;
+    color: #C2FCF7;
+  }
+  
+  .entrance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styling the heading */
+  .heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #C2FCF7;
+  }
+  
+  /* Search bar container to hold the input and button */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    padding: 10px;
+    font-size: 1rem;
+    height: 40px;
+    width: 300px;
+    border: 1px solid #57737A;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    box-sizing: border-box;
+    color: #C2FCF7;
+    background-color: #1a2a2a;
+  }
+  
+  /* Button styling */
+  .search-button {
+    padding: 0 20px;
+    font-size: 1rem;
+    height: 40px;
+    background-color: #85BDBF;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .result-container {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #1a2a2a;
+    border: 1px solid #57737A;
+    color: #C2FCF7;
+    text-align: left;
+    opacity: 0;
+  }
+  
+  /* Keyframes for the fade-in animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOutBelow {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  .result-container.gone {
+    animation: fadeOut 0.4s ease forwards; /* Match duration with setTimeout */
+  }
+  
+  .result-container.show {
+    opacity: 1;
+    animation: fadeInUp 0.5s ease forwards;
+  }

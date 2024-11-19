@@ -1,0 +1,9 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* This will hide any scrollbars */
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

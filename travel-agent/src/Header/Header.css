@@ -3,7 +3,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: #040F0F;
     z-index: 1; /* Ensures header stays on top of other content */
     display: flex;
     justify-content: space-between;
@@ -15,8 +15,10 @@ header {
     align-items: center;
     justify-content: center;
     font-family: 'Arial', sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
+    color: #C9FBFF;
+    margin-left: 20px;
   }
   
   nav ul {
@@ -32,16 +34,16 @@ header {
   
   nav li {
     text-decoration: none;
-    color: #333;
+    color: #85BDBF;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
   }
   
   nav li:hover {
-    color: #007bff;
+    color: #C9FBFF;
   }
   
   nav li.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color: #C9FBFF;
+    border-bottom: 2px solid #C9FBFF;
   }
